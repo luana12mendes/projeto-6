@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline:none;
+
+}
+
+body{
+    position: relative;
+    background:#f0f0f0;
+    font-family: 'reboto',sans-serif;
+}
+
+.menu-site{
+    position: fixed;
+    top: 0;
+    left:0;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+ /* INICIO DO MENU À ESQUERDA */
+.suspenso-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+   /* background: black; */
+}
+.suspenso-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+}
+
+.suspenso-btn span:nth-child(1){
+    top: 0;
+}
+
+.suspenso-btn span:nth-child(3){
+    top: 100%;
+}
+
+/* FINAL DO MENU À ESQUERDA */
+
+/* INICIO DO LOGO DO SITE */
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+/* FINAL DO LOGO DO SITE */
+
+/* INICIO DO BUSCA DO SITE */
+
+.busca-site{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    width: 50%;
+    height: 35px;
+    display: flex;
+}
+
+
+/* INICIO DO BUSCA IMPUT DO SITE */
+.busca-imput{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.busca-btn{
+    width: 15%;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.busca-btn img{
+    height:100%
+
+}
+
+/* INICIO MNEU USUÁRIO DO SITE */
+
+.usuario-menu{
+    height: 35px;
+    margin-left: auto;
+    display: flex;
+    
+}
+
+.usuario-menu.icone{
+    height: 80%;
+    margin-right: 20px;
+}
+.usuario-perfil{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.usuario-perfil img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* INICIO BARRA LATERAL DO SITE */
+
+.barra-lateral{
+position: fixed;
+top: 60px;
+left: 0;
+min-width: 250px;
+width: 250px;
+height: calc(100vh - 60px);
+background: #fff;
+padding-right: 10px;
+
+}
+
+.links{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.links img{
+    height: 20px;
+    margin-right: 20px
+}
+
+.links:hover,
+.links.ativo{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.divisor{
+    border: none;
+    border-bottom: 1px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+
+}
+
+/* FIM BARRA LATERAL DO SITE */
+
+/* INICIO FILTROS DO SITE */
+
+
+.filtros{
+    position: fixed;
+    top: 60px;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.filtros::-webkit-scrollbar{
+    display: none;
+}
+
+.opcoes-filtros{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: #242424;
+    font-size: 15px;
+}
+
+.opcoes-filtros.ativo{
+    color: #fff;
+    background: #242424;
+}
+/* FIM FILTROS DO SITE */
+
+/* CORPO DO VÍDEOS DO SITE */
+
+.corpo-videos{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow: hidden;
+}
+
+.video{
+    min-height: 250px;
+    height: auto;
+}
+
+.miniatura{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.conteudo-video{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*.canal-icone{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+} */
+
+.titulo-video{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+
+}
